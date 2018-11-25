@@ -1,0 +1,2 @@
+## GPL Notice
+This device tree contains a prebuilt, original, untouched kernel that comes with Haier G50 `boot.img` file. Unfortunately the manufacturer has not released kernel sources, meaning even I don't have them and I have to use the prebuilt kernel for this. If you wish to obtain kernel sources, contact the manufactuer for it.

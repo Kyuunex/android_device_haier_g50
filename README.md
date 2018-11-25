@@ -33,12 +33,12 @@ ln -s ../manifests/local_manifest.xml .repo/local_manifests/local_manifest.xml
 repo sync
 ```
 
-After that, we need to apply some patches. In `patches` folder, you run:
+After that, we need to apply some patches. In `device/haier/g50/patches` folder, you run:
 ```
 source apply-patches.sh
 ```
 
-After that we need to manually edit `/home/koishi/cm14/packages/apps/FMRadio/jni/fmr/libfm_jni.cpp` file, change line:
+After that we need to manually edit `packages/apps/FMRadio/jni/fmr/libfm_jni.cpp` file, change line:
 ```cpp
 tmp_freq = (int)(freq * 10);        //Eg, 87.5 * 10 --> 875
 ```

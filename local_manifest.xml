@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="kyuunex" fetch="https://github.com/kyuunex" revision="cm-14.1" />
+
+	<project path="vendor/haier/g50" name="android_vendor_haier_g50" remote="kyuunex" />
+	<project path="device/haier/g50" name="android_device_haier_g50" remote="kyuunex" />
+</manifest>

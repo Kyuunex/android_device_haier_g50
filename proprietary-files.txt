@@ -18,12 +18,11 @@ bin/akmd09911
 bin/nvram_daemon
 bin/mc6420d
 bin/lsm303md
-bin/qmcX983d
+#bin/qmcX983d
 bin/wmt_loader
 bin/md_ctrl
 bin/gsm0710muxdmd2
-bin/dualmdlogger
-bin/memsicd3524x
+#bin/dualmdlogger
 bin/akmd8963
 bin/orientationd
 bin/guiext-server
@@ -33,7 +32,7 @@ bin/akmd8975
 bin/6620_launcher
 bin/ami304d
 bin/gsm0710muxd
-bin/mtkbt
+#bin/mtkbt
 bin/wifi2agps
 bin/memsicd
 bin/ccci_fsd
@@ -236,7 +235,7 @@ etc/wifi/wpa_supplicant.conf
 etc/wifi/p2p_supplicant_overlay.conf
 etc/wifi/wpa_supplicant_overlay.conf
 etc/firmware/ROMv2_lm_patch_1_1_hdr.bin
-etc/firmware/S_ANDRO_SFL.ini
+#etc/firmware/S_ANDRO_SFL.ini
 etc/firmware/modem_1_lwg_n.img
 etc/firmware/ROMv2_lm_patch_1_0_hdr.bin
 etc/firmware/mt6627/mt6627_fm_v5_coeff.bin
@@ -256,10 +255,10 @@ etc/firmware/dsp_1_lwg_n.bin
 etc/mtk_omx_core.cfg
 etc/.tp/thermal.conf
 etc/.tp/.ht120.mtc
-etc/.tp/thermal.mid.conf
-etc/.tp/thermal.high.conf
+#etc/.tp/thermal.mid.conf
+#etc/.tp/thermal.high.conf
 etc/.tp/thermal.off.conf
-etc/.tp/thermal.low.conf
+#etc/.tp/thermal.low.conf
 
 lib{,64}/libpqservice.so
 lib{,64}/libgas.so
@@ -272,17 +271,17 @@ lib{,64}/libfs_mgr.so
 
 lib{,64}/libcam.iopipe.so
 lib{,64}/libcam.iopipe_FrmB.so
-bin/bin/ccci_rpcd
+#bin/ccci_rpcd
 lib{,64}/libterservice.so
 
 #lib{,64}/libmrdump.so
 
-bin/update_verifier
+#bin/update_verifier
 bin/mobile_log_d
 
-bin/update_verifier
-bin/mobile_log_d
-bin/met_log_d
+#bin/update_verifier
+#bin/mobile_log_d
+#bin/met_log_d
 bin/netdiag
 bin/pq
 

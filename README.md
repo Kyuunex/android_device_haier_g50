@@ -5,7 +5,14 @@ This device also goes by names: Beeline Fast (in Georgia), Haier L54 (in Guatema
 ---
 
 ## What I know works:
-* Sound
+* Brightness control
+* Sound (Headphones, Speakers, Microphone)
+* FM Radio
+* GPS
+* Sensors (Accelerometer, Light, Proximity)
+* Wi-FI (Hotspot untested)
+* Bluethooth
+* USB (MTP and ADB)
 
 ## Issues:
 * Camera not working
@@ -16,5 +23,32 @@ This device also goes by names: Beeline Fast (in Georgia), Haier L54 (in Guatema
 
 ---
 
-## Building
-There still is a lot of work to do to get everything to work. I will provide easy instructions once I am done. I still need to work on vendor tree Basically.
+## Instructions
+Downloading sources:
+```
+repo init -u git://github.com/LineageOS/android.git -b cm-14.1
+curl https://raw.githubusercontent.com/Kyuunex/android_device_haier_g50/cm-14.1/local_manifest.xml > .repo/manifests/local_manifest.xml
+mkdir .repo/local_manifests/
+ln -s ../manifests/local_manifest.xml .repo/local_manifests/local_manifest.xml
+repo sync
+```
+
+After that, we need to apply some patches. In `patches` folder, you run:
+```
+source apply-patches.sh
+```
+
+After that we need to manually edit `/home/koishi/cm14/packages/apps/FMRadio/jni/fmr/libfm_jni.cpp` file, change line:
+```cpp
+tmp_freq = (int)(freq * 10);        //Eg, 87.5 * 10 --> 875
+```
+to this
+```cpp
+tmp_freq = (int)(freq * 100);        //Eg, 87.5 * 10 --> 875
+```
+
+And finally, we actually build it:
+```
+source build/envsetup.sh
+brunch g50
+```

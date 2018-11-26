@@ -5,18 +5,21 @@ This device also goes by names: Beeline Fast (in Georgia), Haier L54 (in Guatema
 ---
 
 ## What I know works:
+* Telephony (Calls, Messages)
 * Brightness control
 * Sound (Headphones, Speakers, Microphone)
 * FM Radio
-* GPS
 * Sensors (Accelerometer, Light, Proximity)
 * Wi-FI (Hotspot untested)
 * Bluethooth
 * USB (MTP and ADB)
+* Camera (with a `libc` `-fno-stack-protector` hack)
+* Flashlight (with a `libc` `-fno-stack-protector` hack)
 
 ## Issues:
-* Camera not working
-* Flashlight not working
+* GPS not working
+* LiveDisplay not working
+* Offline charging not working
 
 ## What I have not tested:
 * Whatever you don't see listed above.

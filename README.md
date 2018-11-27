@@ -41,15 +41,6 @@ After that, we need to apply some patches. In `device/haier/g50/patches` folder,
 source apply-patches.sh
 ```
 
-After that we need to manually edit `packages/apps/FMRadio/jni/fmr/libfm_jni.cpp` file, change line:
-```cpp
-tmp_freq = (int)(freq * 10);        //Eg, 87.5 * 10 --> 875
-```
-to this
-```cpp
-tmp_freq = (int)(freq * 100);        //Eg, 87.5 * 10 --> 875
-```
-
 And finally, we actually build it:
 ```
 source build/envsetup.sh

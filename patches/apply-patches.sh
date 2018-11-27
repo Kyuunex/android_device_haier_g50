@@ -23,4 +23,6 @@ cd ../..
 cd system/netd
 git apply -v ../../device/haier/g50/patches/0010-wifi-tethering-fix.patch
 cd ../..
-
+cd packages/apps/FMRadio
+git apply -v ../../../device/haier/g50/patches/fmradio.patch
+cd ../../..

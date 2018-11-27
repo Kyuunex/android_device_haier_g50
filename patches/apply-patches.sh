@@ -6,7 +6,7 @@ git apply -v ../../device/haier/g50/patches/0004-libnetutils-add-MTK-bits-ifc_cc
 git apply -v ../../device/haier/g50/patches/0012-PATCH-xen0n-some-MTK-services-e.g.-ril-daemon-mtk-re.patch
 cd ../..
 cd bionic
-git apply -v ../device/haier/g50/patches/0002-Apply-LIBC-version-to-__pthread_gettid.patch
+git apply -v ../device/haier/g50/patches/bionic.patch
 cd ..
 cd system/sepolicy
 git apply -v ../../device/haier/g50/patches/0003-Revert-back-to-policy-version-29.patch

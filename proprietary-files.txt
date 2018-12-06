@@ -1,30 +1,48 @@
+#app/MtkBt/MtkBt.apk
+#app/Camera/lib{,64}/arm/libpanorama.so
+#app/Camera/lib{,64}/arm/libDocVfbEngineLib_m81.so
 app/YGPS/YGPS.apk
 xbin/mnld
 xbin/BGW
 bin/mtkrildmd2
 bin/xlog
+bin/mtk_setprop
+bin/uiautomator
+bin/AcdApiDaemon
+bin/6620_wmt_lpbk
 bin/muxreport
 bin/MtkCodecService
 bin/msensord
 bin/mdlogger
 bin/terservice
 bin/thermal_manager
+bin/fsck_msdos_mtk
 bin/mtkrild
+bin/thermald
 bin/memsicd3416x
+bin/thermal
+bin/permission_check
 bin/bmm050d
 bin/em_svr
+bin/nvram_agent_binder
 bin/ccci_mdinit
 bin/akmd09911
 bin/nvram_daemon
 bin/mc6420d
 bin/lsm303md
-#bin/qmcX983d
+bin/qmcX983d
+bin/6620_wmt_concurrency
+bin/kpoc_charger
 bin/wmt_loader
 bin/md_ctrl
+bin/lcdc_screen_cap
 bin/gsm0710muxdmd2
-#bin/dualmdlogger
+bin/dualmdlogger
+bin/pppd
+bin/memsicd3524x
 bin/akmd8963
 bin/orientationd
+bin/program_binary_service
 bin/guiext-server
 bin/mtk_agpsd
 bin/geomagneticd
@@ -32,11 +50,15 @@ bin/akmd8975
 bin/6620_launcher
 bin/ami304d
 bin/gsm0710muxd
-#bin/mtkbt
+bin/aee
+bin/sn
+bin/pppd_dt
+bin/mtkbt
 bin/wifi2agps
 bin/memsicd
 bin/ccci_fsd
 bin/s62xd
+lib{,64}/libtinycompress.so
 lib{,64}/libMtkOmxFlacDec.so
 lib{,64}/libcam.camadapter.so
 lib{,64}/libcameracustom.so
@@ -65,6 +87,7 @@ lib{,64}/libstagefrighthw.so
 lib{,64}/libui_ext.so
 lib{,64}/libh264enc_sa.ca7.so
 lib{,64}/lib3a_sample.so
+lib{,64}/libion.so
 lib{,64}/libfeatureio.so
 lib{,64}/libbtsession.so
 lib{,64}/libaudiocomponentengine.so
@@ -97,6 +120,7 @@ lib{,64}/libcam3_utils.so
 lib{,64}/libdrmmtkutil.so
 lib{,64}/libspeech_enh_lib.so
 lib{,64}/libmatv_cust.so
+lib{,64}/libtinyxml.so
 lib{,64}/libcam.utils.cpuctrl.so
 lib{,64}/libfile_op.so
 lib{,64}/libcam.metadata.so
@@ -114,6 +138,7 @@ lib{,64}/libbtcust.so
 lib{,64}/libnvram_daemon_callback.so
 lib{,64}/libged.so
 lib{,64}/libem_usb_jni.so
+lib{,64}/libtinyalsa.so
 lib{,64}/libem_wifi_jni.so
 lib{,64}/libbluetoothdrv.so
 lib{,64}/libccci_util.so
@@ -160,6 +185,7 @@ lib{,64}/libimageio.so
 lib{,64}/libperfservice.so
 lib{,64}/libcam.client.so
 lib{,64}/libcam.hal3a.v3.dng.so
+lib{,64}/libSonyIMX230PdafLibrary.so
 lib{,64}/libmmprofile.so
 lib{,64}/libcamera_client_mtk.so
 lib{,64}/libgpu_aux.so
@@ -235,7 +261,7 @@ etc/wifi/wpa_supplicant.conf
 etc/wifi/p2p_supplicant_overlay.conf
 etc/wifi/wpa_supplicant_overlay.conf
 etc/firmware/ROMv2_lm_patch_1_1_hdr.bin
-#etc/firmware/S_ANDRO_SFL.ini
+etc/firmware/S_ANDRO_SFL.ini
 etc/firmware/modem_1_lwg_n.img
 etc/firmware/ROMv2_lm_patch_1_0_hdr.bin
 etc/firmware/mt6627/mt6627_fm_v5_coeff.bin
@@ -255,10 +281,10 @@ etc/firmware/dsp_1_lwg_n.bin
 etc/mtk_omx_core.cfg
 etc/.tp/thermal.conf
 etc/.tp/.ht120.mtc
-#etc/.tp/thermal.mid.conf
-#etc/.tp/thermal.high.conf
+etc/.tp/thermal.mid.conf
+etc/.tp/thermal.high.conf
 etc/.tp/thermal.off.conf
-#etc/.tp/thermal.low.conf
+etc/.tp/thermal.low.conf
 
 lib{,64}/libpqservice.so
 lib{,64}/libgas.so
@@ -271,19 +297,22 @@ lib{,64}/libfs_mgr.so
 
 lib{,64}/libcam.iopipe.so
 lib{,64}/libcam.iopipe_FrmB.so
-#bin/ccci_rpcd
+bin/bin/ccci_rpcd
 lib{,64}/libterservice.so
 
 #lib{,64}/libmrdump.so
 
-#bin/update_verifier
+bin/update_verifier
 bin/mobile_log_d
 
-#bin/update_verifier
-#bin/mobile_log_d
-#bin/met_log_d
+bin/update_verifier
+bin/mobile_log_d
+bin/met_log_d
 bin/netdiag
 bin/pq
+bin/aal
+bin/dm_agent_binder
+bin/ppl_agent
 
 lib{,64}/libimageio_plat_drv_FrmB.so
 lib{,64}/libcam.iopipe_FrmB.so
@@ -293,6 +322,7 @@ lib{,64}/hw/audio.a2dp.default.so
 lib{,64}/hw/audio_policy.stub.so
 lib{,64}/hw/lights.mt6735m.so
 lib{,64}/hw/radio.fm.mt6735m.so
+lib{,64}/hw/remoteir.default.so	
 
 lib{,64}/liba3m.so
 lib{,64}/libacdk.so

@@ -10,9 +10,9 @@ This device also goes by names: Beeline Fast (in Georgia), Haier L54 (in Guatema
 * Sound (Headphones, Speakers, Microphone)
 * FM Radio
 * Sensors (Accelerometer, Light, Proximity)
-* Wi-FI (Hotspot untested)
+* Wi-FI
 * Bluethooth
-* USB (MTP and ADB)
+* USB (MTP and ADB) (MTP does not work on linux though)
 * Camera
 * Flashlight
 
@@ -23,6 +23,7 @@ This device also goes by names: Beeline Fast (in Georgia), Haier L54 (in Guatema
 * Wrong resolutions in Camera
 * Video Recording does not work
 * 3DMark crashes at the end
+* Devices fail to connect to the wifi hotspot
 
 ## What I have not tested:
 * Whatever you don't see listed above.
@@ -39,8 +40,9 @@ ln -s ../manifests/local_manifest.xml .repo/local_manifests/local_manifest.xml
 repo sync
 ```
 
-After that, we need to apply some patches. In `device/haier/g50/patches` folder, you run:
+After that, we need to apply some patches.
 ```
+cd device/haier/g50/patches
 source apply-patches.sh
 ```
 

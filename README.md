@@ -1,6 +1,6 @@
 # Device tree for Haier G50.
 
-This device also goes by names: Beeline Fast (in Georgia), Haier L54 (in Guatemala), reallytek rlk6735m_65u_c_m0 (in build.prop file)
+This device also goes by names: Beeline Fast (in Georgia), Haier L54 (in Guatemala), reallytek rlk6735m_65u_c_m0 (in build.prop file) and HM-G551-FL as actual model number.
 
 ---
 
@@ -12,7 +12,7 @@ This device also goes by names: Beeline Fast (in Georgia), Haier L54 (in Guatema
 * Sensors (Accelerometer, Light, Proximity)
 * Wi-FI
 * Bluethooth
-* USB (MTP and ADB) (MTP does not work on linux though)
+* USB (MTP and ADB)
 * Camera
 * Flashlight
 

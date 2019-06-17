@@ -34,9 +34,8 @@ This device also goes by names: Beeline Fast (in Georgia), Haier L54 (in Guatema
 Downloading sources: (This will take a while)
 ```
 repo init -u git://github.com/LineageOS/android.git -b cm-14.1
-curl https://raw.githubusercontent.com/Kyuunex/android_device_haier_g50/cm-14.1/local_manifest.xml > .repo/manifests/local_manifest.xml
 mkdir .repo/local_manifests/
-ln -s ../manifests/local_manifest.xml .repo/local_manifests/local_manifest.xml
+curl https://raw.githubusercontent.com/Kyuunex/android_device_haier_g50/cm-14.1/local_manifest.xml > .repo/local_manifests/local_manifest.xml
 repo sync
 ```
 

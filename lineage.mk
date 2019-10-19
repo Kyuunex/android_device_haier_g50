@@ -7,7 +7,7 @@ PRODUCT_RELEASE_NAME := g50
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/haier/g50/device_g50.mk)
+$(call inherit-product, device/haier/g50/device.mk)
 
 TARGET_SCREEN_HEIGHT := 854
 TARGET_SCREEN_WIDTH := 480
